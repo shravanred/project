@@ -1,6 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar=()=>{
+const linkstyle={
+    textDecoration:'none'
+}
+
+const liststyle={
+    margin:10
+}
+
     return(
         <div>
 <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -18,20 +27,23 @@ const NavBar=()=>{
     </button>
     <div className="collapse navbar-collapse" id="collapsibleNavbar">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <li className="nav-item" style={liststyle}>
+          {/* <a className="nav-link" href="#">
             Home
-          </a>
+          </a> */}
+          <Link to={"/"} style={linkstyle}>Home</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <li className="nav-item" style={liststyle}>
+          {/* <a className="nav-link" href="#">
             Skills
-          </a>
+          </a> */}
+          <Link to={"/skills"} style={linkstyle}>Skills</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <li className="nav-item" style={liststyle}>
+          {/* <a className="nav-link" href="#">
             Project
-          </a>
+          </a> */}
+          <Link to={"/projects"} style={linkstyle}>Projects</Link>
         </li>
       </ul>
     </div>
