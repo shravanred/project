@@ -20,17 +20,17 @@ const NavBar=()=>{
       <ul className="navbar-nav">
         <li className="nav-item">
           <a className="nav-link" href="#">
-            Link
+            Home
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
-            Link
+            Skills
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
-            Link
+            Project
           </a>
         </li>
       </ul>
