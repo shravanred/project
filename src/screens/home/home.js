@@ -6,14 +6,15 @@ const Home=()=>{
     return(
         <>
         
-        {/* <div style={{backgroundColor:"black",backgroundSize:"cover",
-            backgroundImage:"url("")"
-        }}> */}
+        <div style={{backgroundSize:'cover',
+            backgroundImage:`url(${image})` , height:'100vh' 
+            }}>
         <NavBar/>
-    
-        <h1 >Welcome to Home</h1>
-        <img src={image}/>
-        {/* </div> */}
+
+        {/* <img src={image}/> */}
+        <h1 style={{color:'white'}}>Welcome to Home</h1>
+        
+        </div>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {NavLink } from "react-router-dom";
+import "./navbar.css"
 
 const NavBar=()=>{
 const linkstyle={
@@ -12,7 +13,7 @@ const liststyle={
 
     return(
         <div>
-<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav className="navbar navbar-expand-sm  navbar-dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
       Logo
@@ -31,19 +32,23 @@ const liststyle={
           {/* <a className="nav-link" href="#">
             Home
           </a> */}
-          <Link to={"/"} style={linkstyle}>Home</Link>
+          <NavLink to={"/"} style={linkstyle}>Home</NavLink>
         </li>
+
+
+
+
         <li className="nav-item" style={liststyle}>
           {/* <a className="nav-link" href="#">
             Skills
           </a> */}
-          <Link to={"/skills"} style={linkstyle}>Skills</Link>
+          <NavLink to={"/skills"} style={linkstyle}>Skills</NavLink>
         </li>
         <li className="nav-item" style={liststyle}>
           {/* <a className="nav-link" href="#">
             Project
           </a> */}
-          <Link to={"/projects"} style={linkstyle}>Projects</Link>
+          <NavLink to={"/projects"} style={linkstyle}>Projects</NavLink>
         </li>
       </ul>
     </div>
