@@ -26,6 +26,7 @@ const liststyle={
     >
       <span className="navbar-toggler-icon" />
     </button>
+
     <div className="collapse navbar-collapse" id="collapsibleNavbar">
       <ul className="navbar-nav">
         <li className="nav-item" style={liststyle}>
@@ -35,15 +36,13 @@ const liststyle={
           <NavLink to={"/"} style={linkstyle}>Home</NavLink>
         </li>
 
-
-
-
         <li className="nav-item" style={liststyle}>
           {/* <a className="nav-link" href="#">
             Skills
           </a> */}
           <NavLink to={"/skills"} style={linkstyle}>Skills</NavLink>
         </li>
+        
         <li className="nav-item" style={liststyle}>
           {/* <a className="nav-link" href="#">
             Project
