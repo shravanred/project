@@ -2,7 +2,7 @@
 
 const Engineers=()=>{
     return(
-        <h1>engineers page</h1>
+        <h1 style={{color:'white'}}>engineers page</h1>
     )
 }
 

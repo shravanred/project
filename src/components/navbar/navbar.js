@@ -33,21 +33,21 @@
 //           {/* <a className="nav-link" href="#">
 //             Home
 //           </a> */}
-//           <NavLink to={"/"} style={linkstyle}>Home</NavLink>
+//           <NavLink to="/" style={linkstyle}>Home</NavLink>
 //         </li>
 
 //         <li className="nav-item" style={liststyle}>
 //           {/* <a className="nav-link" href="#">
 //             Skills
 //           </a> */}
-//           <NavLink to={"/skills"} style={linkstyle}>Skills</NavLink>
+//           <NavLink to="/skills" style={linkstyle}>Skills</NavLink>
 //         </li>
         
 //         <li className="nav-item" style={liststyle}>
 //           {/* <a className="nav-link" href="#">
 //             Project
 //           </a> */}
-//           <NavLink to={"/projects"} style={linkstyle}>Projects</NavLink>
+//           <NavLink to="/projects" style={linkstyle}>Projects</NavLink>
 //         </li>
 //       </ul>
 //     </div>
@@ -81,9 +81,7 @@ function Navbar() {
         <NavLink to="/projects" className="bg">
           Projects
         </NavLink>
-        <NavLink to="/products" className="bg">
-          Products
-        </NavLink>
+        
       </nav>
     </div>
   );
